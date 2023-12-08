@@ -1,0 +1,25 @@
+@use './config/reset.scss';
+@use './config/variaveis.scss';
+@use './header.scss';
+@use './section.scss';
+
+body {
+    background-color: variaveis.$light;
+}
+
+li {
+    list-style: none;
+}
+
+.container {
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: variaveis.$notebook) {
+    .container {
+        max-width: 80%;
+    }
+}
+
